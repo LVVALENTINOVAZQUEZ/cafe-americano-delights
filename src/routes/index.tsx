@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import cafeHero from "@/assets/cafe-hero.jpg";
 import cafeCounter from "@/assets/cafe-counter.png.asset.json";
 import cafeCustomer from "@/assets/cafe-customer.png.asset.json";
+import cafePackageVideo from "@/assets/cafe-americano-package.mp4.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
