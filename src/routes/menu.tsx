@@ -59,6 +59,15 @@ function MenuPage() {
         </p>
       </div>
 
+      <div className="mt-12 overflow-hidden rounded-2xl shadow-md">
+        <img
+          src={cafeVarieties.url}
+          alt="Variedades de café: espresso, americano, cappuccino, latte, mocha y macchiato"
+          className="h-full w-full object-cover"
+          loading="lazy"
+        />
+      </div>
+
       <div className="mt-14 space-y-14">
         {menuCategories.map((category) => (
           <section key={category.title}>
