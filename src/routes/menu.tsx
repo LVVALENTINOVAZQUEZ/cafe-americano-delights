@@ -93,6 +93,18 @@ function MenuPage() {
           </section>
         ))}
       </div>
+
+      <figure className="mt-16 overflow-hidden rounded-2xl shadow-md">
+        <img
+          src={cafeBagel.url}
+          alt="Bagel con queso crema, café americano y fresas frescas"
+          className="h-full w-full object-cover"
+          loading="lazy"
+        />
+        <figcaption className="bg-card px-5 py-3 text-center text-sm text-muted-foreground">
+          Nuestro clásico: bagel artesanal con queso crema y un americano recién pasado.
+        </figcaption>
+      </figure>
     </div>
   );
 }
