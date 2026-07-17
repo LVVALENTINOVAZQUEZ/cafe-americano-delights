@@ -1,4 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
+import cafeVarieties from "@/assets/cafe-varieties.png.asset.json";
+import cafeBagel from "@/assets/cafe-bagel.png.asset.json";
+
 
 export const Route = createFileRoute("/menu")({
   head: () => ({
