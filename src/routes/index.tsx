@@ -95,6 +95,38 @@ function HomePage() {
         </div>
       </section>
 
+      {/* Nuestro café en bolsa - video */}
+      <section className="border-t border-border/50 bg-background">
+        <div className="mx-auto grid max-w-6xl gap-10 px-4 py-20 sm:px-6 lg:grid-cols-2 lg:items-center lg:px-8">
+          <div>
+            <p className="text-sm font-medium uppercase tracking-widest text-primary">Llévalo a casa</p>
+            <h2 className="mt-3 font-display text-3xl font-semibold text-foreground sm:text-4xl">
+              Nuestro café, en tu cocina
+            </h2>
+            <p className="mt-4 text-muted-foreground">
+              Empacamos nuestros granos de especialidad recién tostados para que puedas disfrutar la misma taza de Café Americano en la comodidad de tu hogar. Aroma, cuerpo y carácter en cada bolsa.
+            </p>
+            <div className="mt-8">
+              <Button asChild size="lg" variant="outline">
+                <Link to="/menu">Descubre nuestros granos</Link>
+              </Button>
+            </div>
+          </div>
+          <div className="overflow-hidden rounded-2xl shadow-lg ring-1 ring-border/50">
+            <video
+              src={cafePackageVideo.url}
+              className="h-full w-full object-cover"
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="metadata"
+              aria-label="Paneo cinematográfico de la bolsa de café de especialidad de Café Americano sobre una mesa de madera"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* Espacio / Counter */}
       <section className="border-t border-border/50 bg-muted/20">
         <div className="mx-auto grid max-w-6xl gap-10 px-4 py-20 sm:px-6 lg:grid-cols-2 lg:items-center lg:px-8">
