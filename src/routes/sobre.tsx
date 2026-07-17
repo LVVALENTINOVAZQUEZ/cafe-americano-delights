@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Heart, Leaf, Users } from "lucide-react";
 import cafeAbout from "@/assets/cafe-about.jpg";
+import cafeBowl from "@/assets/cafe-bowl.png.asset.json";
 
 export const Route = createFileRoute("/sobre")({
   head: () => ({
