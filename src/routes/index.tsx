@@ -94,22 +94,55 @@ function HomePage() {
         </div>
       </section>
 
+      {/* Espacio / Counter */}
+      <section className="border-t border-border/50 bg-muted/20">
+        <div className="mx-auto grid max-w-6xl gap-10 px-4 py-20 sm:px-6 lg:grid-cols-2 lg:items-center lg:px-8">
+          <div className="overflow-hidden rounded-2xl shadow-lg">
+            <img
+              src={cafeCounter.url}
+              alt="Barra de Café Americano con máquina de espresso y granos de café"
+              className="h-full w-full object-cover"
+              loading="lazy"
+            />
+          </div>
+          <div>
+            <p className="text-sm font-medium uppercase tracking-widest text-primary">Nuestro espacio</p>
+            <h2 className="mt-3 font-display text-3xl font-semibold text-foreground sm:text-4xl">
+              Un rincón donde el tiempo se detiene
+            </h2>
+            <p className="mt-4 text-muted-foreground">
+              Luz natural, madera cálida y el aroma constante del café recién molido. Cada rincón está pensado para que te sientas como en casa.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="border-t border-border/50 bg-muted/30">
-        <div className="mx-auto max-w-6xl px-4 py-16 text-center sm:px-6 lg:px-8">
-          <h2 className="font-display text-3xl font-semibold text-foreground sm:text-4xl">
-            ¿Listo para tu próxima taza?
-          </h2>
-          <p className="mx-auto mt-4 max-w-xl text-muted-foreground">
-            Pasa por Café Americano y descubre por qué cada sorbo se siente como en casa.
-          </p>
-          <div className="mt-8 flex flex-wrap justify-center gap-4">
-            <Button asChild variant="outline" size="lg">
-              <Link to="/horario">Ver horario</Link>
-            </Button>
-            <Button asChild size="lg">
-              <Link to="/menu">Explorar menú</Link>
-            </Button>
+        <div className="mx-auto grid max-w-6xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-2 lg:items-center lg:px-8">
+          <div className="text-center lg:text-left">
+            <h2 className="font-display text-3xl font-semibold text-foreground sm:text-4xl">
+              ¿Listo para tu próxima taza?
+            </h2>
+            <p className="mt-4 max-w-xl text-muted-foreground lg:mx-0">
+              Pasa por Café Americano y descubre por qué cada sorbo se siente como en casa.
+            </p>
+            <div className="mt-8 flex flex-wrap justify-center gap-4 lg:justify-start">
+              <Button asChild variant="outline" size="lg">
+                <Link to="/horario">Ver horario</Link>
+              </Button>
+              <Button asChild size="lg">
+                <Link to="/menu">Explorar menú</Link>
+              </Button>
+            </div>
+          </div>
+          <div className="overflow-hidden rounded-2xl shadow-lg">
+            <img
+              src={cafeCustomer.url}
+              alt="Clienta sonriendo con un café para llevar en Café Americano"
+              className="h-full w-full object-cover"
+              loading="lazy"
+            />
           </div>
         </div>
       </section>
