@@ -82,6 +82,26 @@ function SobrePage() {
           ))}
         </div>
       </section>
+
+      <section className="mt-20 grid gap-10 lg:grid-cols-2 lg:items-center">
+        <div>
+          <p className="text-sm font-medium uppercase tracking-widest text-primary">Cocina de autor</p>
+          <h2 className="mt-3 font-display text-3xl font-semibold text-foreground">
+            Platos pensados para acompañar tu café
+          </h2>
+          <p className="mt-4 text-muted-foreground">
+            Trabajamos con productos frescos y de temporada. Nuestra cocina propone bocados sencillos, cuidados y llenos de sabor — el complemento ideal para una tarde tranquila con tu bebida favorita.
+          </p>
+        </div>
+        <div className="overflow-hidden rounded-2xl shadow-lg">
+          <img
+            src={cafeBowl.url}
+            alt="Bowl de cocina de autor servido junto a un café en Café Americano"
+            className="h-full w-full object-cover"
+            loading="lazy"
+          />
+        </div>
+      </section>
     </div>
   );
 }
